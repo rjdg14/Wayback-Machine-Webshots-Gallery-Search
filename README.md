@@ -5,6 +5,10 @@ This project consists of an archive of text-only .txt copies of the text contain
 
 I would recommend using either a terminal command to search for gallery terms or alternatively a program like GrepWin. When running from a command line, ensure that the command is from the root directory containing each alphabet, and ensure it is configured to search within subdirectories. On MacOS the mdfind command is by far the fastest but it relies on the Spotlight function, which is likely to take several hours to cache the data after downloading and extracting. Grep is a more reliable but much slower option on Unix systems. Ensure that whatever search command you use outputs the directory path of each result, which will contain the profile name.
 
+To load a profile containing a gallery of interest, copy the profile name listed in the search results (eg: `pathto/*profilename*/index.txt`) and enter in your web browser's URL bar `https://web.archive.org/web/20120101/http://webshots.com/user/*profilename*`. The Wayback Machine will then modify the URL to the appropriate timestamp from 2012 that it has archived and load the profile page, which you will be able to explore.
+
+
+
 Current limitations include the following:
 
 * Other text besides gallery names, including the names of Webshots interface links, is stored in each .txt file. You should be careful when performing a batch search of the files not to specify any of the single words or phrases that appear on every profile page (eg: Webshots, log in, photos, animals, popular etc). I may be able to perform some batch modifications to the .txt files at some point in the future to narrow down the content of the files to just gallery names and dates, which should also significantly reduce the size of the dataset as well as making it more reliable for certain terms.
