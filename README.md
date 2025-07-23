@@ -5,11 +5,11 @@ This project consists of an archive of text-only .txt copies of the text contain
 
 I would recommend using either a terminal command to search for gallery terms or alternatively a program like GrepWin. When running from a command line, ensure that the command is from the root directory containing each alphabet, and ensure it is configured to search within subdirectories. On MacOS the mdfind command is by far the fastest but it relies on the Spotlight function, which is likely to take several hours to cache the data after downloading and extracting. Grep is a more reliable but much slower option on Unix systems. Ensure that whatever search command you use outputs the directory path of each result, which will contain the profile name.
 
-An mdfind command on MacOS should look like the following:
+An mdfind command on MacOS should look like the following (running on a terminal from the pathto/webshotscrawl/users directory):
 
 `mdfind \"text phrase\"  -onlyin "/pathto/webshotscrawl/users"`
 
-A Unix grep command (which will hang for a long time as it searches for content; depending on the speed of your system this could take up to several hours) on a system running MacOS or Linux should be in this format:
+A Unix grep command (which will hang for a long time as it searches for content; depending on the speed of your system this could take up to several hours) on a system running MacOS or Linux should be in this format (running on a terminal from the pathto/webshotscrawl/users directory):
 
 `grep -r "text phrase" "/pathto/webshotscrawl/users"`
 
